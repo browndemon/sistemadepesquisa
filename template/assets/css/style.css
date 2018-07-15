@@ -1,0 +1,10 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	width: 100%;
+	font: 18px Verdana, Arial, Sans-serif;
+}
+/*Grids
+.col-12{width: 100%;display: flex;justify-content: center;}.col-11{width: 90%;display: flex;justify-content: center;}.col-10{width: 80%;display: flex;justify-content: center;}.col-9{width: 70%;display: flex;justify-content: center;}.col-8{width: 60%;display: flex;justify-content: center;}.col-7{width: 55%;display: flex;justify-content: center;}.col-6{width: 50%;display: flex;justify-content: center;}.col-5{width: 45%;display: flex;justify-content: center;}.col-4{width: 40%;display: flex;justify-content: center;}.col-3{width: 30%;display: flex;justify-content: center;}.col-2{width: 20%;display: flex;justify-content: center;}.col-1{width: 10%;display: flex;justify-content: center;}*/
