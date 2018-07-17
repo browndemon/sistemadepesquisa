@@ -1,10 +1,124 @@
-*{
-	margin: 0;
-	padding: 0;
+/* HEADER */
+header {
+    padding: 2em 0;
 }
-html, body{
-	width: 100%;
-	font: 18px Verdana, Arial, Sans-serif;
+
+.logo-desktop {
+    width: 200px;
+    height: 89px;
 }
-/*Grids
-.col-12{width: 100%;display: flex;justify-content: center;}.col-11{width: 90%;display: flex;justify-content: center;}.col-10{width: 80%;display: flex;justify-content: center;}.col-9{width: 70%;display: flex;justify-content: center;}.col-8{width: 60%;display: flex;justify-content: center;}.col-7{width: 55%;display: flex;justify-content: center;}.col-6{width: 50%;display: flex;justify-content: center;}.col-5{width: 45%;display: flex;justify-content: center;}.col-4{width: 40%;display: flex;justify-content: center;}.col-3{width: 30%;display: flex;justify-content: center;}.col-2{width: 20%;display: flex;justify-content: center;}.col-1{width: 10%;display: flex;justify-content: center;}*/
+
+
+
+/* BANNER */
+.banner-desktop {
+    width: 100%;
+}
+
+
+
+/* MONTE SEU PC MAIS BARATO */
+.montepc {
+    background: url(../img/monte-pc-agora/bg.jpg) no-repeat fixed;
+    background-size: cover
+}
+
+.bgimgmp {
+    background: rgba(0, 0, 0, 0.82);
+}
+
+.bgmpc {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+}
+
+.montepc p {
+    color: white;
+    font-size: 2em;
+    margin-top: .2em;
+}
+
+
+/* COMPONENTES */
+.componentes {
+    margin-top: 3em;
+}    
+
+.bgcomp {
+    background: url(../img/monte-pc-agora/bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.bgcompcor {
+    background: rgba(0, 0, 139, 0.62);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.divcomp {
+    margin-bottom: 1em;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    border-bottom-right-radius: 1em;
+}
+
+.divcomp:hover {
+    box-shadow: 1px 1px 10px black;
+}
+
+
+.divcomp select {
+    max-height: 50px;
+    padding: .5em;
+    font-size: 1.1em;
+}
+
+.imagem-nome {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-nome img {
+    width: 100px;
+    height: 100px;
+    background: rgb(168, 168, 168);
+    border-top-left-radius: 1em;
+}
+
+h3 {
+    margin-left: 2em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    .montepc p {
+        font-size: 1.2em;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+    
+    .divcomp select {
+        font-size: .9em;
+    }
+}

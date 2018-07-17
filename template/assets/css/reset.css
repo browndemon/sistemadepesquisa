@@ -1,0 +1,44 @@
+/* ====== RESET ======== */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+body {
+    background: #eaeaea;
+    font-size: 16px;
+}
+
+/* CONTAINER */
+
+    /* CONFIG PRA MOBILE */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+    /* CONFIG PRA DESKTOP */
+@media (min-width: 1130px) {
+    .container {
+        max-width: 1130px;
+        padding: 0px;
+    }  
+}
+
+
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', sans-serif;
+}
