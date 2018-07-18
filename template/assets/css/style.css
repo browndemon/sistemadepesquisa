@@ -24,7 +24,7 @@ header {
 }
 
 .bgimgmp {
-    background: rgba(0, 0, 0, 0.82);
+    background: rgba(0, 0, 139, 0.85);
 }
 
 .bgmpc {
@@ -50,17 +50,16 @@ h2 {
 }    
 
 .bgcomp {
-    background: url(../img/monte-pc-agora/bg.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
 }
 
 .bgcompcor {
-    background: rgba(0, 0, 139, 0.62);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 1em;
+    background: rgba(65, 65, 65, 0.78);
 }
 
 .divcomp {
@@ -68,7 +67,7 @@ h2 {
     transition: all 1s;
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
-    border-bottom-right-radius: 1em;
+    border: .5px solid rgba(255, 255, 255, 0.21);
 }
 
 .divcomp:hover {
@@ -77,9 +76,23 @@ h2 {
 
 
 .divcomp select {
-    max-height: 50px;
-    padding: .5em;
+    max-height: 70px;
+    padding: 1em 2em;
     font-size: 1.1em;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: .5px solid rgba(255, 255, 255, 0.13);
+    cursor: pointer;
+    min-width: 225px;
+    border-radius: .2em;
+}
+
+.divcomp select:hover {
+    border: .5px solid rgb(255, 255, 255);
+}
+
+option {
+    color: black;
 }
 
 .imagem-nome {
@@ -90,8 +103,9 @@ h2 {
 .imagem-nome img {
     width: 100px;
     height: 100px;
-    background: rgb(168, 168, 168);
+    background: rgba(162, 162, 162, 0.21);
     border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 h3 {
@@ -102,6 +116,12 @@ h3 {
     font-weight: bold;
 }
 
+
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+    
+}
 
 
 /* MOBILE */
@@ -118,7 +138,29 @@ h3 {
         font-size: 1em;
     }
     
+    .bgcompcor {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .imagem-nome {
+        width: 100%;
+    }
+    
+    .divcomp {
+        margin-bottom: 2em;
+    }
+    
     .divcomp select {
-        font-size: .9em;
+        width: 99%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
+    
+    .bgcompcor {
+        padding-right: 0;
     }
 }
+
+
