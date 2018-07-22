@@ -279,6 +279,9 @@ CREATE TABLE `tb_tipo_hardware` (
   `tipo_hardware` char(2) NOT NULL,
   `titulo_hardware` varchar(45) NOT NULL,
   `descricao_hardware` varchar(255) NOT NULL,
+  `arquivo_icone_imagem` varchar(255) DEFAULT NULL,
+  `icone_html` varchar(255) DEFAULT NULL,
+  `ordem_apresentacao` int(4) DEFAULT NULL,
   PRIMARY KEY (`tipo_hardware`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -389,4 +392,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-07-22 20:53:50
+-- Dump completed on 2018-07-22 21:18:05
