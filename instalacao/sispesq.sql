@@ -139,6 +139,9 @@ CREATE TABLE `tb_hardware` (
   `fabricante_id` int(11) NOT NULL,
   `modelo_id` int(11) NOT NULL,
   `pontuacao` int(11) DEFAULT '0',
+  `url_original` varchar(255) DEFAULT NULL,
+  `preco` decimal(10,0) DEFAULT '0',
+  `criacao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`hardware_id`),
   KEY `hardware_tipo_hardware_idx` (`tipo_hardware`),
   KEY `hardware_fabricante_id_idx` (`fabricante_id`),
@@ -386,4 +389,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-07-22 20:41:59
+-- Dump completed on 2018-07-22 20:53:50
